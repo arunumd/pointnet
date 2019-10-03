@@ -10,7 +10,7 @@ DATA_DIR = os.path.join(BASE_DIR, 'data')
 if not os.path.exists(DATA_DIR):
     os.mkdir(DATA_DIR)
 if not os.path.exists(os.path.join(DATA_DIR, 'modelnet40_ply_hdf5_2048')):
-    www = '/content/drive/My Drive/modelnet40_ply_hdf5_2048.zip'
+    www = '/content/drive/My%20Drive/modelnet40_ply_hdf5_2048.zip'
     zipfile = os.path.basename(www)
     os.system('mv %s; unzip %s' % (www, zipfile))
     os.system('mv %s %s' % (zipfile[:-4], DATA_DIR))
